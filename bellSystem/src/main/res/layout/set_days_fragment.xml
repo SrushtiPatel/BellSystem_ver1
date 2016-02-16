@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvHoliday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Holiday"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spHoliday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:background="@drawable/border_button_secondary"
+            android:spinnerMode="dialog" />
+
+        <Button
+            android:id="@+id/btnSendHoliday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:background="@color/color_primary"
+            android:text="Send"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/android_white"
+            android:visibility="visible" >
+        </Button>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_margin="@dimen/activity_vertical_margin" />
+
+        <TextView
+            android:id="@+id/tvHalfday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Halfday"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spHalfday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:background="@drawable/border_button_secondary"
+            android:spinnerMode="dialog" />
+
+        <Button
+            android:id="@+id/btnSendHalfday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:background="@color/color_primary"
+            android:text="Send"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/android_white"
+            android:visibility="visible" >
+        </Button>
+    </LinearLayout>
+
+</ScrollView>

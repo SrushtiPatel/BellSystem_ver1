@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bell System</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_alarm_set">Set</string>
+    <string name="action_alarm_reset">Reset</string>
+    <string name="action_alarm_read">Read</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string name="tap_on_mic">Tap on mic to speak</string>
+    <string name="title_activity_home">Connect Device</string>
+    <string name="title_activity_alarm">Set Alarm</string>
+    <string name="title_activity_belltime">Set Bell Time</string>
+    
+	<string name="action_connect">Connect</string>
+	<string name="title_activity_devicelist">Select BT Serial Device</string>
+	
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item ></item>
+        <item >Connect</item>
+        <item >Set Days</item>
+        <item >Set Time</item>
+        <item >Set Alarm</item>
+        <item >Reset PIN</item>
+<!--         <item >Communities</item> -->
+<!--         <item >Pages</item> -->
+<!--         <item >What\'s Hot</item> -->
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+<!--         <item>@drawable/ic_home</item> -->
+<!--         <item>@drawable/ic_people</item> -->
+<!--         <item>@drawable/ic_photos</item> -->
+        <item>@drawable/ic_drawer_connet</item>
+        <item>@drawable/ic_drawer_days</item>
+        <item>@drawable/ic_drawer_bell</item>
+        <item>@drawable/ic_drawer_alarm</item>
+        <item>@drawable/ic_password</item>
+    </array>
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    
+    <string-array name="ary_alarm">
+        <item >Full Day Alarm</item>
+        <item >Half Day Alarm</item>
+        <item >Emergency Alarm</item>
+    </string-array>
+
+</resources>

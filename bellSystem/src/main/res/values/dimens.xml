@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+	<dimen name="line_horizontal_margin">20dp</dimen>
+	
+	<dimen name="scrollview_margin">2dp</dimen>
+    <dimen name="scrollview_padding">2dp</dimen>
+    
+    <dimen name="dimen_5dp">5dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+
+    <dimen name="input_box_size">20sp</dimen>
+</resources>

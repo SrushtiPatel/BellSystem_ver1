@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/testView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtString"
+        android:text=""
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtString"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/testView1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/testView1"
+        android:text=""
+        android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/btnSpeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+        android:layout_alignLeft="@+id/txtString"
+        android:layout_alignStart="@+id/txtString"
+        android:layout_above="@id/txtString"    
+            android:src="@android:drawable/ic_btn_speak_now" />
+    <Button
+        android:id="@+id/buttonOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="68dp"
+        android:background="@color/android_green"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/buttonOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonOn"
+        android:layout_alignBottom="@+id/buttonOn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/android_grey"
+        android:text="Stop" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignLeft="@+id/buttonOn"
+        android:layout_alignStart="@id/buttonOn"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="@dimen/line_horizontal_margin"
+        android:layout_marginRight="@dimen/line_horizontal_margin"
+        android:layout_marginTop="150dp"
+        android:background="@color/android_red"
+        android:padding="0dp" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignBottom="@+id/layout_middle"
+        android:layout_alignLeft="@+id/layout_middle"
+        android:layout_alignStart="@id/layout_middle"
+        android:layout_marginLeft="@dimen/line_horizontal_margin"
+        android:layout_marginRight="@dimen/line_horizontal_margin"
+        android:background="@color/android_red"
+        android:padding="0dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/circle_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_oval_red"
+            android:gravity="center"
+            android:text=" S "
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/space"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+        
+        <TextView
+            android:id="@+id/square_middle"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="top"
+            android:layout_marginEnd="@dimen/line_horizontal_margin"
+            android:layout_marginRight="@dimen/line_horizontal_margin"
+            android:layout_marginTop="-1dp"
+            android:background="@color/android_red" />
+
+        <TextView
+            android:id="@+id/circle_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_oval_red"
+            android:backgroundTint="@color/android_green"
+            android:gravity="center"
+            android:text=" S "
+            android:textColor="@color/text_color" />
+    </LinearLayout>
+
+</RelativeLayout>
